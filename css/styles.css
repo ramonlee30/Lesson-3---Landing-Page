@@ -229,9 +229,9 @@ header {
   }
 }
 
-/* Section1 */
-#section1 {
-  grid-area: section1;
+/* Section */
+#section {
+  grid-area: section;
   margin-top: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -239,53 +239,11 @@ header {
   justify-content: center;
 }
 
-#section1 h2 {
+#section h2 {
   width: 100%;
 }
 
-.section1-flex {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-/* Section2 */
-#section2 {
-  grid-area: section2;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-#section2 h2 {
-  width: 100%;
-}
-
-.section2-flex {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-/* Section3 */
-#section3 {
-  grid-area: section3;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
-
-#section3 h2 {
-  width: 100%;
-}
-
-.section1-flex {
+.section-flex {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
