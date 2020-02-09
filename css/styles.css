@@ -7,7 +7,7 @@
  * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
  *
 */
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500,600,700|Raleway:400,400i,500&display=swap');
 
 /* ---- Base Rules ---- */
 * {
@@ -92,6 +92,7 @@ li, a {
   "ruff"
   "emailalert"
   "section"
+  "toys"
   "contact";
 }
 
@@ -116,7 +117,7 @@ header {
   padding: 0 20px;
 }
 
-.navbar-menu {
+.navbar {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -130,7 +131,7 @@ header {
   height: auto;
 }
 
-.navbar-menu {
+.navbar {
   padding: 0 20px;
 }
 
@@ -155,13 +156,56 @@ header {
     padding: 0 15px;
   }
 
-  .navbar-menu {
+  .navbar {
     width: 50%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
     align-items: center;
   }
+}
+
+.nav-list {
+  list-style: none;
+  margin: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 0 20px;
+  letter-spacing: 0.05em;
+}
+
+.nav-list li a {
+  transition: all 0.3s ease 0s;
+  color: white;
+  padding: 12px 20px;
+}
+
+.nav-list li a:hover {
+  color: #000;
+  background-color: #FFF;
+}
+
+/* Hero Image */
+
+.ruff {
+  grid-area: ruff;
+  background-image: url("../img/Profile Picture.jpg");
+  width: 100vw;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.ruff h1 {
+  color: #fffaf0;
+  margin: 20%;
 }
 
 /* emailalert */
@@ -250,15 +294,92 @@ header {
   align-items: flex-start;
 }
 
+.section-card {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  height: 230px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px 30px;
+  margin: 20px;
+}
+
+.section-icon {
+  text-align: center;
+}
+
 @media (min-width: 800px) {
-  .landing-container {
+  .section-flex {
     flex-flow: row wrap;
   }
-  
-@media (min-width: 800px) and (max-width: 999px) {
-  .landing-container h3 {
-    font-size: 1.3em;
+  .section-card {
+    width: 30%;
   }
+}
+
+@media (min-width: 800px) and (max-width: 999px) {
+  .section-flex h3 {
+    font-size: 2em;
+  }
+  .walk {
+    font-size: 2.5em;
+  }
+  .section-card {
+    height: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section-card {
+    height: 250px;
+  }
+}
+
+#toys {
+  grid-area: toys;
+  width: 100vw;
+  height: 80vh;
+  background-color: black;
+  display: flex;
+}
+
+.toys-container {
+  width: 100%;
+  padding: 30px;
+  margin: 10px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#toys h2 {
+  color: white;
+  max-width: 500px;
+}
+
+.toy-img {
+  height: 60%;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (min-width: 750px) {
+  #toys {
+    background-image: url("../img/toys.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .toys-container {
+    width: 50%;
+    padding: 30px;
+    margin: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+}
   
 /* Contact */
 
@@ -339,4 +460,8 @@ footer {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+}
+
+.active {
+  background-color: red;
 }
