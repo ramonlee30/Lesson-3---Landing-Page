@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll('section');
 const ul = document.createElement('ul');
-document.getElementById('navbar__list').appendChild(ul);
+document.getElementById('navbar-list').appendChild(ul);
 //loop through elements to grab the data-nav elements
 for (let i = 0; i < sections.length; i++) {    
     const section = sections[i];    
