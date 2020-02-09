@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Manipulating the DOM</title>
+  <title>Popy's Page</title>
+    
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
   <link href="css/styles.css" rel="stylesheet">
@@ -21,7 +22,7 @@
         </a>
     </div>
     
-    <nav class="navbar-menu">
+    <nav class="navbar">
       <ul id="nav-list">
       <!-- Navigation starts as empty UL that will be populated with JS -->
       </ul>
@@ -53,34 +54,55 @@
         </form>
       </section> <!-- emailalert -->
     
-     <section id="section1" data-nav="Section" class="your-active-class">
-          <div class="landing-container">
-            <h2>Section 1</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+    <section id="section" data-nav="section" class="your-active-class">
+        <h2>Go For Walks in the City</h2>
+        <div class="section-flex">
+          <div class="section-card">
+            <div class="section-icon">
+              <i class="walks"></i>
+            </div>
+            <div class="section-headline">
+              <h3>Activities to Do Today</h3>
+            </div>
+            <div class="section-text">
+              Soak up your city just like a tourist would but with a much better sense of direction. If you plan your route, you can make pit-stops at all of your city’s pet-friendly haunts for treats and attention. All the tourists will be so jealous.
+            </div>
+          </div> <!-- section-card -->
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-            
-       <section id="section2" data-nav="Section">
-      <div class="landing-container">
-       <h2>Section 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+          <div class="section-card">
+            <div class="section-icon">
+              <i class="swim"></i>
+            </div>
+            <div class="section-headline">
+              <h3>Spend a day swimming and exploring a beach or lake</h3>
+            </div>
+            <div class="section-text">
+              Some dogs are more like mermaids, so let them be part of that world! But before you do, make sure the beach or lake is dog-friendly and that you bring a doggy life vest. (Not all dogs can swim!)
+            </div>
+          </div> <!-- section-card -->
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>         
-    
-    <section id="section3" data-nav="Section">
-      <div class="landing-container">
-        <h2>Section 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi fermentum metus faucibus lectus pharetra dapibus. Suspendisse potenti. Aenean aliquam elementum mi, ac euismod augue. Donec eget lacinia ex. Phasellus imperdiet porta orci eget mollis. Sed convallis sollicitudin mauris ac tincidunt. Donec bibendum, nulla eget bibendum consectetur, sem nisi aliquam leo, ut pulvinar quam nunc eu augue. Pellentesque maximus imperdiet elit a pharetra. Duis lectus mi, aliquam in mi quis, aliquam porttitor lacus. Morbi a tincidunt felis. Sed leo nunc, pharetra et elementum non, faucibus vitae elit. Integer nec libero venenatis libero ultricies molestie semper in tellus. Sed congue et odio sed euismod.</p>
+          <div class="section-card">
+            <div class="section-icon">
+              <i class="run"></i>
+            </div>
+            <div class="section-headline">
+              <h3>Run or jog together</h3>
+            </div>
+            <div class="section-text">
+              Nothing tires out a pup with lots of energy like a long run. Some dogs are better suited for longer distances than others, so consider your pup’s health, the temperature outside, and always bring fuel, like treats and water. If you have a real runner on your hands — as in, a dog that’s prone to running off — it’s key to get a leash specially made for running. If this becomes a regular activity for you both, see if you can consistently beat your previous time.
+            </div>
+          </div> <!-- section-card -->
+        </div> <!-- flex-container -->
+      </section> <!-- section -->
 
-        <p>Aliquam a convallis justo. Vivamus venenatis, erat eget pulvinar gravida, ipsum lacus aliquet velit, vel luctus diam ipsum a diam. Cras eu tincidunt arcu, vitae rhoncus purus. Vestibulum fermentum consectetur porttitor. Suspendisse imperdiet porttitor tortor, eget elementum tortor mollis non.</p>
-      </div>
-    </section>
-  
-    <section id="contact" data-nav="Contact">
+      <section id="toys" data-nav="toys">
+        <div class="toys-container">
+          <h2>BStock up on toys together at your favorite pet-friendly store</h2>
+          <img class="toy-img" src="img/toy.jpg" alt="toy">
+        </div>
+      </section> <!-- toys -->
+
+      <section id="contact" data-nav="Contact">
         <div class="contact-outer">
           <form action="#">
             <h5>Contact Us</h5>
